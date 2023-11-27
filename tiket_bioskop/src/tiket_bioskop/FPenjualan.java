@@ -3,18 +3,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package tiket_bioskop;
-           
+    import javax.swing.ButtonGroup;
 /**
  *
  * @author Administrator
  */
 public class FPenjualan extends javax.swing.JFrame {
     Hasilnya hasil = new Hasilnya();
+    private final ButtonGroup jenisTiketGroup;
        /**
      * Creates new form FPenjualan
      */
     public FPenjualan() {
         initComponents();
+        jenisTiketGroup = new ButtonGroup();
+        jenisTiketGroup.add(Reguler);
+        jenisTiketGroup.add(Ultra);
+        jenisTiketGroup.add(XdUltra);
+        jenisTiketGroup.add(Gold);
+    }
+    
+    public void cancel(){
+        NKursi.setText("");
+        JBeli.setText("");
+        HSatuan.setText("");
+        Harga.setText("");
+        Reguler.setText("False");
+        XdUltra.setText("False");
+        Reguler.setText("True");
+        XdUltra.setText("True");
     }
 
     /**
@@ -210,14 +227,7 @@ public class FPenjualan extends javax.swing.JFrame {
 
     private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
         // TODO add your handling code here:
-        NKursi.setText("");
-        JBeli.setText("");
-        HSatuan.setText("");
-        Harga.setText("");
-        Reguler.setText("False");
-        XdUltra.setText("False");
-        Reguler.setText("True");
-        XdUltra.setText("True");
+        cancel();
     }//GEN-LAST:event_CancelActionPerformed
 
     /**
