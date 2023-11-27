@@ -3,14 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package tiket_bioskop;
-
+           
 /**
  *
  * @author Administrator
  */
 public class FPenjualan extends javax.swing.JFrame {
-
-    /**
+    Hasilnya hasil = new Hasilnya();
+       /**
      * Creates new form FPenjualan
      */
     public FPenjualan() {
@@ -183,10 +183,9 @@ public class FPenjualan extends javax.swing.JFrame {
 
     private void ProsesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProsesActionPerformed
         // TODO add your handling code here:
-        int a = Integer.parseInt(HSatuan.getText());
-        int b = Integer.parseInt(JBeli.getText());
-        int hasilnya= a * b ;
-        Harga.setText("Rp." + hasilnya);
+        hasil.setNilai1(Double.parseDouble(HSatuan.getText()));
+        hasil.setNilai2(Double.parseDouble(JBeli.getText()));
+        Harga.setText(Double.toString(hasil.getHasil()));
     }//GEN-LAST:event_ProsesActionPerformed
 
     private void RegulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegulerActionPerformed
