@@ -6,8 +6,9 @@ package tiket_bioskop;
 
 public class Hasilnya {
     
-    String jenistiket, jam, jamtayang;
-    double nilai1, nilai2, hasil, biaya;
+    String jenistiket, jam, jamtayang, kursi, nkursi;
+    double nilai1, nilai2, hasil;
+    int biaya;
 
     public void setJam(String val) {
         jam = val;
@@ -58,7 +59,7 @@ public class Hasilnya {
         return jenistiket;
     }
 
-    public double getBiaya(){
+    public int getBiaya(){
         return biaya;
     }
 
@@ -75,7 +76,7 @@ public class Hasilnya {
             biaya=0;
         }
     }
-    
+        
     //Nilai
     public double getNilai1() {
         return nilai1;
@@ -97,7 +98,5 @@ public class Hasilnya {
         return (nilai1 * nilai2);
     }
 }
-
-
 
 
