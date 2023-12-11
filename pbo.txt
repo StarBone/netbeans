@@ -1,0 +1,15 @@
+disini kita menambahkan variabel string, double dan integer dengan stringnya sendiri yaitu jenis tiket, jam dan jamtayang
+kemudian doublenya yaitu nilai1, nilai2 dan trakhir integer sebagai biaya.
+
+yang pertama disini ada fungsi menejemen jam, yang terdapat 2 metode yaitu setjam dan getjam yang digunakan untuk mengatur dan mendapatkan nilai jam,
+dan ada pula metode setjamtayang dan getjamtayang untuk mengatur dan mendapatkan nilai dari jamtayang,
+lalu ada metode seleksi jam digunakan untuk menetapkan nilai jamtayang berdasarkan nilai jam yang diatur sebelumnya,
+Terdapat kondisi if else untuk memeriksa nilai jam dan menetapkan nilai jamtayang sesuai dengan jam yang kita pilih.
+
+yang kedua ada fungsi menejemen tiket dengan Metodenya adalah setJenisTiket dan getJenisTiket yang digunakan untuk mengatur dan mendapatkan jenis tiket,
+lalu ada metode getBiaya mengembalikan nilai biaya tiket, dan metode setSeleksiJenisTiket menetapkan biaya tiket berdasarkan jenis tiket yang dipilih,
+Terdapat kondisi if else yang memeriksa jenis tiket dan menetapkannya pada nilai biaya sesuai dengan jenis tiket yang dipilih.
+
+yang ketiga ada fungsi atribut nilai1(sebgai harga satuan) dan nilai2(sebagai jumlah beli), Metode getNilai1 dan getNilai2 digunakan untuk mendapatkan nilai dari kedua atribut tersebut,
+kemudian metode setNilai1 dan setNilai2 digunakan untuk mengatur nilai kedua atribut.
+Metode getHasil digunakan untuk melakukan operasi perkalian antara nilai1 dan nilai2 yang Hasil dari perkalian tersebut kemudian dikembalikan sebagai nilai balik dari metode getHasil.
