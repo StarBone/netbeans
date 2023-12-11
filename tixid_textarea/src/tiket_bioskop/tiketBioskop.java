@@ -6,8 +6,8 @@ package tiket_bioskop;
 
 public class tiketBioskop {
     
-    String jenistiket, jam, jamtayang, kursi, nkursi;
-    double nilai1, nilai2, hasil;
+    String jenistiket, jam, jamtayang;
+    double nilai1, nilai2;
     int biaya;
 
     public void setJam(String val) {
@@ -30,20 +30,20 @@ public class tiketBioskop {
         if (jam.equalsIgnoreCase("11:00")){
             jamtayang = "11:00";
         }
-        else if (jam.equalsIgnoreCase("11:00")){
-            jamtayang = "11:00";
+        else if (jam.equalsIgnoreCase("13:00")){
+            jamtayang = "13:00";
         }
-        else if (jam.equalsIgnoreCase("11:00")){
-            jamtayang = "11:00";
+        else if (jam.equalsIgnoreCase("15:00")){
+            jamtayang = "15:00";
         }
-        else if (jam.equalsIgnoreCase("11:00")){
-            jamtayang = "11:00";
+        else if (jam.equalsIgnoreCase("17:00")){
+            jamtayang = "17:00";
         }
-        else if (jam.equalsIgnoreCase("11:00")){
-            jamtayang = "11:00";
+        else if (jam.equalsIgnoreCase("19:00")){
+            jamtayang = "19:00";
         }
-        else if (jam.equalsIgnoreCase("11:00")){
-            jamtayang = "11:00";
+        else if (jam.equalsIgnoreCase("21:00")){
+            jamtayang = "21:00";
         }
         else if(jam.equalsIgnoreCase("-PILIH-")){
              jamtayang = "Tolong Pilih Jam Yang Benar";
@@ -66,13 +66,17 @@ public class tiketBioskop {
     public void setSeleksiJenisTiket(){
         if (jenistiket.equalsIgnoreCase("Reguler")){
             biaya=50000;
-        }else if(jenistiket.equalsIgnoreCase("Ultra")){
+        }
+        else if(jenistiket.equalsIgnoreCase("Ultra")){
             biaya=60000;
-        }else if(jenistiket.equalsIgnoreCase("XdUltra")){
+        }
+        else if(jenistiket.equalsIgnoreCase("XdUltra")){
             biaya=70000;
-        }else if(jenistiket.equalsIgnoreCase("Gold")){
+        }
+        else if(jenistiket.equalsIgnoreCase("Gold")){
             biaya=100000;
-        }else{
+        }
+        else{
             biaya=0;
         }
     }
